@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+    <style>
+        /* Add your CSS styling here */
+		
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 200px; /* Reduced width for shrinking */
+    position: absolute; /* Fix the container */
+    bottom: 10px; /* Position at the bottom */
+    left: 10px; /* Position at the left */
+    background-color: rgba(255, 255, 255, 0.8);
+}
+		
+    body {
+    background-image: url(Imgs/Backdrop%20V2.jpg);
+    background-repeat: cover;
+}
+    body,td,th {
+    color: #02d608;
+}
+    </style>
+	<style>
+		.footer{
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			background-color: chartreuse;
+			color: black;
+			padding: 10px;
+		}
+	</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Torres Portfolio</title>
+</head>
+
+<body>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbutton">
+		<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">C.L.T.</label>
+		<ul>
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Resume.html">Resume</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="#">Feedback</a></li>
+		</ul>
+	</nav>
+    <div class="intro">
+        <h1 class="logo-header">
+			<span class="logo">Christopher L. Torres</span>
+		  <span class="Logo"><img src="Imgs/For.png" alt="Christopher L. Torres"></span>
+        </h1>
+		
+    </div>
+    
+    <header>
+        <h4><strong>Christopher L Torres</strong></h4>
+    </header>
+<script src="app.js"></script>
+</body>
+
+	<body>
+	      <h1><strong>Introduction </strong></h1>
+        <p><h2><strong>Hello My name is Christopher, I am a Bcc student majoring in computer information systems (AAS) I am in my third semester and have learned a lot about coding.</strong></h2></p>
+	<p><strong><h2>A few languages I am familiarizing myself with are HTML, CSS, and the very basics of Python.</h2></strong></p>
+    <p><h4><strong>I am still being introduced to the world of coding but hopefully in time I can become the best coder I could be and have the ability </strong></h4></p>
+	<p><h4><strong>too correct or even simplify lines of codes.</strong></h4></p>
+
+    <div class="container">
+<img src="Imgs/CalculatorV2.png" alt="Img/CalculatorV2.png" width="100" height="100">
+        <form id="mpgCalculator">
+            <label for="milesTraveled">Miles Traveled:</label>
+            <input type="number" id="milesTraveled" step="0.01" required>
+            <br>
+            <label for="gallonsUsed">Gallons Used:</label>
+            <input type="number" id="gallonsUsed" step="0.01" required>
+            <br>
+            <button type="button" onclick="calculateMPG()">Calculate MPG</button>
+        </form>
+        <p>MPG: <span id="result">-</span></p>
+    </div>
+
+    <script>
+        function calculateMPG() {
+            // Get input values
+            const milesTraveled = parseFloat(document.getElementById("milesTraveled").value);
+            const gallonsUsed = parseFloat(document.getElementById("gallonsUsed").value);
+
+            // Calculate MPG
+            if (gallonsUsed !== 0) {
+                const milesPerGallon = milesTraveled / gallonsUsed;
+
+                // Display the result
+                document.getElementById("result").textContent = milesPerGallon.toFixed(2);
+            } else {
+                alert("Gallons Used must be greater than zero.");
+            }
+        }
+    </script>
+	</body>
+	<body>
+    <div class="slider-frame">
+        <div class="slide-images">
+            <div class="img-container">
+                <img src="Imgs/CunyX1.jpg" alt="Image 1">
+            </div>
+            <div class="img-container">
+                <img src="Imgs/CunyY2.jpg" alt="Image 2">
+            </div>
+            <div class="img-container">
+                <img src="Imgs/CunyZ3.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <h4> © All Rights Reserved 2023 </h4>
+</footer>
+</html>
